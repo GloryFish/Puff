@@ -1,0 +1,15 @@
+# Puff
+
+A python API wrapper that enables posting audio to Huffduffer.
+
+
+## Usage
+
+    import puff
+    
+    username = [YOUR_USERNAME]
+    password = [YOUR_PASSWORD]
+    
+    puffer = puff.Puffer()
+    
+    succeeded, message = puffer.post('http://example.com/audio.mp3')
