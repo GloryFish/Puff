@@ -1,15 +1,33 @@
-# Puff
+# Puffer
 
 A python API wrapper that enables posting audio to Huffduffer.
 
+Can also be used as a simple command-line client.
 
 ## Usage
 
+### Command line
+
+    puff.py http://example.com/audio.mp3
+
+
+### Module
+    
+You can specify a username and password directly to the Puffer() constructor, or create a puff.ini file with the following format in the same directory as puff.py:
+
+    [huffdiffer]
+    username = YOURUSERNAME
+    password = YOURPASSWORD
+
+
+Then in your code:
+    
     import puff
-    
-    username = [YOUR_USERNAME]
-    password = [YOUR_PASSWORD]
-    
     puffer = puff.Puffer()
-    
-    succeeded, message = puffer.post('http://example.com/audio.mp3')
+    puffer.post('http://example.com/audio.mp3')
+
+
+## Requirements
+
+Python 2.x
+Mechanize (pip install mechanize)
