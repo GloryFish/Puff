@@ -1,4 +1,4 @@
-#! /usr/local/bin/python3
+#! /usr/bin/python
 # 
 #  test.py
 #  puff
@@ -13,5 +13,4 @@ print('Starting')
 
 puffer = puff.Puffer()
 
-puffer.post('http://gloryfish.org/test.mp3')
-
+succeeded = puffer.post('http://www.largesound.com/ashborytour/sound/brobob.mp3')
