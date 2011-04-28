@@ -108,8 +108,9 @@ class Puffer(object):
         
         
     def log(self, message):
-        sys.stdout.write('%s\n' % message )
-        sys.stdout.flush()
+        if __name__ == '__main__':
+            sys.stdout.write('%s\n' % message )
+            sys.stdout.flush()
         
     def encoded_credentials(self):
         return urllib.urlencode({'login[username]': self.username, 'login[password]': self.password})
