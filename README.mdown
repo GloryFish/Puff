@@ -15,7 +15,7 @@ Can also be used as a simple command-line client.
     
 You can specify a username and password directly to the Puffer() constructor, or create a puff.ini file with the following format in the same directory as puff.py:
 
-    [huffdiffer]
+    [huffduffer]
     username = YOURUSERNAME
     password = YOURPASSWORD
 
